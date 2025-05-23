@@ -1,0 +1,55 @@
+:root {
+  /* Base Colors - Primary */
+  --primary-90: #EAF5DC;
+  --primary-60: #62A60A;
+  --primary-55: #5C9C08;
+  --primary-50: #3E850D;
+  --primary-40: #326B00;
+
+  /* Accent Colors */
+  --accent-90: #E3F2FD;
+  --accent-85: #BBDEFB;
+  --accent-80: #90CAF9;
+  --accent-60: #2196F3;
+  --accent-40: #1976D2;
+  --accent-30: #0D47A1;
+
+  /* Neutral Colors */
+  --neutral-100: #FFFFFF;
+  --neutral-95: #F4F5F7;
+  --neutral-90: #E8E9EB;
+  --neutral-85: #D4D7D9;
+  --neutral-80: #BCBFC2;
+  --neutral-70: #A2A6A8;
+  --neutral-40: #666B70;
+  --neutral-20: #313D47;
+  --neutral-0: #242C33;
+
+  /* Secondary Neutral Colors */
+  --secondary-neutral-95: #F5F4F3;
+  --secondary-neutral-90: #EEECEA;
+  --secondary-neutral-85: #DAD6D3;
+  --secondary-neutral-80: #BDB7B3;
+  --secondary-neutral-70: #A39A93;
+  --secondary-neutral-40: #85776F;
+
+  /* Tertiary Neutral Colors */
+  --tertiary-neutral-95: #FAF9F5;
+  --tertiary-neutral-90: #F5F1E9;
+  --tertiary-neutral-85: #F0E9DA;
+  --tertiary-neutral-80: #EBDDB9;
+  --tertiary-neutral-70: #E1D0A5;
+
+  /* Feedback Colors */
+  --warning-90: #FFEBEC;
+  --warning-50: #F42434;
+  --warning-40: #B30715;
+
+  --alert-90: #FEF6E7;
+  --alert-80: #FACD46;
+  --alert-70: #FF850D;
+  --alert-50: #AC6000;
+
+  /* Accessibility */
+  --accessibility-80: #4095BF;
+} 

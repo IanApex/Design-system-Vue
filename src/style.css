@@ -1,0 +1,23 @@
+/* Import design system tokens and components */
+@import './styles/tokens.css';
+@import './styles/typography.css';
+@import './styles/button.css';
+@import './styles/grid.css';
+@import './styles/spacing.css';
+@import './styles/inputs.css';
+@import './styles/nav-rail.css';
+@import './styles/global.css';
+
+/* Base Vue app styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-family-base);
+  background-color: var(--neutral-100);
+  color: var(--neutral-20);
+}
+
+#app {
+  height: 100%;
+} 

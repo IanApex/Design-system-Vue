@@ -1,0 +1,137 @@
+:root {
+  /* Stack spacing tokens */
+  --spacing-quarck: 4px;
+  --spacing-nano: 8px;
+  --spacing-micro: 12px;
+  --spacing-xxxs: 16px;
+  --spacing-xxs: 24px;
+  --spacing-xs: 32px;
+  --spacing-sm: 40px;
+  --spacing-md: 48px;
+  --spacing-lg: 56px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 80px;
+  --spacing-xxxl: 120px;
+  --spacing-huge: 160px;
+  --spacing-giant: 200px;
+
+  /* Inline spacing tokens - same values for semantic naming */
+  --inline-spacing-quarck: 4px;
+  --inline-spacing-nano: 8px;
+  --inline-spacing-micro: 12px;
+  --inline-spacing-xxxs: 16px;
+  --inline-spacing-xxs: 24px;
+  --inline-spacing-xs: 32px;
+  --inline-spacing-sm: 40px;
+  --inline-spacing-md: 48px;
+  --inline-spacing-lg: 56px;
+  --inline-spacing-xl: 64px;
+  --inline-spacing-xxl: 80px;
+  --inline-spacing-xxxl: 120px;
+  --inline-spacing-huge: 160px;
+  --inline-spacing-giant: 200px;
+
+  /* Inset spacing tokens */
+  --inset-all-quarck: 4px;
+  --inset-all-nano: 8px;
+  --inset-all-micro: 12px;
+  --inset-all-xxxs: 16px;
+  --inset-all-xxs: 24px;
+  --inset-all-xs: 32px;
+  --inset-all-sm: 40px;
+  --inset-all-md: 48px;
+  --inset-all-lg: 56px;
+  --inset-all-xl: 64px;
+
+  /* Squish inset spacing tokens (horizontal and vertical padding) */
+  --inset-squish-quarck: 4px 8px;
+  --inset-squish-nano: 8px 16px;
+  --inset-squish-micro: 6px 12px;
+  --inset-squish-xxxs: 8px 16px;
+  --inset-squish-xxs: 12px 24px;
+  --inset-squish-xs: 16px 32px;
+  --inset-squish-sm: 20px 40px;
+  --inset-squish-md: 24px 48px;
+  --inset-squish-lg: 28px 56px;
+  --inset-squish-xl: 32px 64px;
+
+  /* Stretch inset spacing tokens (more vertical padding than horizontal) */
+  --inset-stretch-quarck: 8px 4px;
+  --inset-stretch-nano: 16px 8px;
+  --inset-stretch-micro: 12px 6px;
+  --inset-stretch-xxxs: 16px 8px;
+  --inset-stretch-xxs: 24px 12px;
+  --inset-stretch-xs: 32px 16px;
+  --inset-stretch-sm: 40px 20px;
+  --inset-stretch-md: 48px 24px;
+  --inset-stretch-lg: 56px 28px;
+  --inset-stretch-xl: 64px 32px;
+}
+
+/* Stack spacing utility classes */
+.stack-spacing-quarck { margin-bottom: var(--spacing-quarck); }
+.stack-spacing-nano { margin-bottom: var(--spacing-nano); }
+.stack-spacing-micro { margin-bottom: var(--spacing-micro); }
+.stack-spacing-xxxs { margin-bottom: var(--spacing-xxxs); }
+.stack-spacing-xxs { margin-bottom: var(--spacing-xxs); }
+.stack-spacing-xs { margin-bottom: var(--spacing-xs); }
+.stack-spacing-sm { margin-bottom: var(--spacing-sm); }
+.stack-spacing-md { margin-bottom: var(--spacing-md); }
+.stack-spacing-lg { margin-bottom: var(--spacing-lg); }
+.stack-spacing-xl { margin-bottom: var(--spacing-xl); }
+.stack-spacing-xxl { margin-bottom: var(--spacing-xxl); }
+.stack-spacing-xxxl { margin-bottom: var(--spacing-xxxl); }
+.stack-spacing-huge { margin-bottom: var(--spacing-huge); }
+.stack-spacing-giant { margin-bottom: var(--spacing-giant); }
+
+/* Inline spacing utility classes */
+.inline-spacing-quarck { margin-right: var(--inline-spacing-quarck); }
+.inline-spacing-nano { margin-right: var(--inline-spacing-nano); }
+.inline-spacing-micro { margin-right: var(--inline-spacing-micro); }
+.inline-spacing-xxxs { margin-right: var(--inline-spacing-xxxs); }
+.inline-spacing-xxs { margin-right: var(--inline-spacing-xxs); }
+.inline-spacing-xs { margin-right: var(--inline-spacing-xs); }
+.inline-spacing-sm { margin-right: var(--inline-spacing-sm); }
+.inline-spacing-md { margin-right: var(--inline-spacing-md); }
+.inline-spacing-lg { margin-right: var(--inline-spacing-lg); }
+.inline-spacing-xl { margin-right: var(--inline-spacing-xl); }
+.inline-spacing-xxl { margin-right: var(--inline-spacing-xxl); }
+.inline-spacing-xxxl { margin-right: var(--inline-spacing-xxxl); }
+.inline-spacing-huge { margin-right: var(--inline-spacing-huge); }
+.inline-spacing-giant { margin-right: var(--inline-spacing-giant); }
+
+/* Inset spacing utility classes */
+.inset-all-quarck { padding: var(--inset-all-quarck); }
+.inset-all-nano { padding: var(--inset-all-nano); }
+.inset-all-micro { padding: var(--inset-all-micro); }
+.inset-all-xxxs { padding: var(--inset-all-xxxs); }
+.inset-all-xxs { padding: var(--inset-all-xxs); }
+.inset-all-xs { padding: var(--inset-all-xs); }
+.inset-all-sm { padding: var(--inset-all-sm); }
+.inset-all-md { padding: var(--inset-all-md); }
+.inset-all-lg { padding: var(--inset-all-lg); }
+.inset-all-xl { padding: var(--inset-all-xl); }
+
+/* Squish inset spacing utility classes */
+.inset-squish-quarck { padding: var(--inset-squish-quarck); }
+.inset-squish-nano { padding: var(--inset-squish-nano); }
+.inset-squish-micro { padding: var(--inset-squish-micro); }
+.inset-squish-xxxs { padding: var(--inset-squish-xxxs); }
+.inset-squish-xxs { padding: var(--inset-squish-xxs); }
+.inset-squish-xs { padding: var(--inset-squish-xs); }
+.inset-squish-sm { padding: var(--inset-squish-sm); }
+.inset-squish-md { padding: var(--inset-squish-md); }
+.inset-squish-lg { padding: var(--inset-squish-lg); }
+.inset-squish-xl { padding: var(--inset-squish-xl); }
+
+/* Stretch inset spacing utility classes */
+.inset-stretch-quarck { padding: var(--inset-stretch-quarck); }
+.inset-stretch-nano { padding: var(--inset-stretch-nano); }
+.inset-stretch-micro { padding: var(--inset-stretch-micro); }
+.inset-stretch-xxxs { padding: var(--inset-stretch-xxxs); }
+.inset-stretch-xxs { padding: var(--inset-stretch-xxs); }
+.inset-stretch-xs { padding: var(--inset-stretch-xs); }
+.inset-stretch-sm { padding: var(--inset-stretch-sm); }
+.inset-stretch-md { padding: var(--inset-stretch-md); }
+.inset-stretch-lg { padding: var(--inset-stretch-lg); }
+.inset-stretch-xl { padding: var(--inset-stretch-xl); } 

@@ -1,0 +1,250 @@
+/* Box Inputs Styles */
+.box-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: var(--font-family-base);
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+/* XS Size */
+.box-input-xs {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* Small Size */
+.box-input-sm {
+    width: 100%;
+    height: 64px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* Medium Size */
+.box-input-md {
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Large Size */
+.box-input-lg {
+    width: 100%;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    min-height: 132px;
+}
+
+.box-input-lg .box-input-label {
+    font-weight: 500;
+    width: 100%;
+    padding: 16px 16px 8px;
+    border-bottom: 1px solid var(--neutral-90);
+    margin-bottom: 0;
+    border-bottom-style: solid;
+}
+
+.box-input-lg .box-input-description {
+    font-size: 14px;
+    color: var(--neutral-40);
+    padding: 8px 16px 16px;
+    width: 100%;
+}
+
+/* States */
+/* Default State */
+.box-input-default {
+    background-color: white;
+    border: 1px solid var(--neutral-90);
+    color: var(--neutral-0);
+}
+
+/* Hover State */
+.box-input-hover {
+    background-color: var(--neutral-95);
+    border: 1px solid var(--neutral-90);
+    color: var(--neutral-0);
+}
+
+/* Selected State */
+.box-input-selected {
+    background-color: white;
+    border: 2px solid var(--primary-50);
+    color: var(--neutral-0);
+}
+
+/* Focus Selected State */
+.box-input-focus {
+    background-color: white;
+    border: 3px solid var(--accent-80);
+    color: var(--neutral-0);
+    box-shadow: 0 0 0 2px var(--accent-80);
+}
+
+/* Medium Size Specific Styles */
+.box-input-md .box-input-main-label {
+    padding-left: 16px;
+}
+
+.box-input-md .box-input-side-label {
+    padding-right: 16px;
+    color: var(--neutral-40);
+}
+
+/* Border width settings */
+.box-input-xs.box-input-default,
+.box-input-xs.box-input-hover,
+.box-input-sm.box-input-default,
+.box-input-sm.box-input-hover,
+.box-input-md.box-input-default,
+.box-input-md.box-input-hover {
+    border-width: 1px;
+}
+
+.box-input-xs.box-input-selected,
+.box-input-sm.box-input-selected,
+.box-input-md.box-input-selected {
+    border-width: 2px;
+}
+
+.box-input-xs.box-input-focus,
+.box-input-sm.box-input-focus,
+.box-input-md.box-input-focus {
+    border-width: 3px;
+}
+
+/* Large size padding adjustments */
+.box-input-lg.box-input-default,
+.box-input-lg.box-input-hover {
+    border-width: 1px;
+}
+
+.box-input-lg.box-input-selected {
+    border-width: 2px;
+}
+
+.box-input-lg.box-input-focus {
+    border-width: 3px;
+}
+
+/* Adjust padding for different border and divider widths in large inputs */
+.box-input-lg.box-input-default .box-input-label,
+.box-input-lg.box-input-hover .box-input-label {
+    padding: 16px 16px 8px;
+}
+
+.box-input-lg.box-input-selected .box-input-label {
+    padding: 15px 15px 7px;
+}
+
+.box-input-lg.box-input-focus .box-input-label {
+    padding: 14px 14px 6px;
+}
+
+.box-input-lg.box-input-default .box-input-description,
+.box-input-lg.box-input-hover .box-input-description {
+    padding: 8px 16px 16px;
+}
+
+.box-input-lg.box-input-selected .box-input-description {
+    padding: 9px 15px 15px;
+}
+
+.box-input-lg.box-input-focus .box-input-description {
+    padding: 10px 14px 14px;
+}
+
+/* Adjust padding for MD inputs */
+.box-input-md.box-input-default .box-input-main-label,
+.box-input-md.box-input-hover .box-input-main-label {
+    padding-left: 16px;
+}
+
+.box-input-md.box-input-selected .box-input-main-label {
+    padding-left: 15px;
+}
+
+.box-input-md.box-input-focus .box-input-main-label {
+    padding-left: 14px;
+}
+
+.box-input-md.box-input-default .box-input-side-label,
+.box-input-md.box-input-hover .box-input-side-label {
+    padding-right: 16px;
+}
+
+.box-input-md.box-input-selected .box-input-side-label {
+    padding-right: 15px;
+}
+
+.box-input-md.box-input-focus .box-input-side-label {
+    padding-right: 14px;
+}
+
+/* Large Size State-specific styling for divider line */
+.box-input-lg.box-input-default .box-input-label,
+.box-input-lg.box-input-hover .box-input-label {
+    border-bottom-color: var(--neutral-90);
+    border-bottom-width: 1px;
+}
+
+.box-input-lg.box-input-selected .box-input-label {
+    border-bottom-color: var(--primary-50);
+    border-bottom-width: 2px;
+}
+
+.box-input-lg.box-input-focus .box-input-label {
+    border-bottom-color: var(--accent-80);
+    border-bottom-width: 3px;
+}
+
+/* Demo styles */
+.input-demo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.input-demo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-demo-item {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 1rem;
+}
+
+.input-demo-label {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--neutral-40);
+}
+
+.input-specs {
+    font-size: 0.8rem;
+    color: var(--neutral-60);
+    text-align: left;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 250px;
+}
+
+.input-spec-item {
+    margin-bottom: 0.25rem;
+} 

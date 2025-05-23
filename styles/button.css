@@ -1,0 +1,124 @@
+@import 'tokens.css';
+
+.btn {
+  font-family: var(--font-family-base);
+  padding: 0 24px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 28px; /* Half of height for pill shape */
+  border: none;
+  font-size: var(--font-size-button-lg);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-button-lg);
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small button variant */
+.btn-sm {
+  padding: 0 16px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px; /* Half of height for pill shape */
+  font-size: var(--font-size-button-sm);
+  letter-spacing: var(--letter-spacing-button-sm);
+}
+
+/* Primary button styles */
+.btn-primary {
+  background-color: var(--primary-50);  /* Primary50 from design system */
+  color: var(--neutral-100);
+}
+
+/* Hover state */
+.btn-primary:hover {
+  background-color: var(--primary-40);
+}
+
+/* Pressed/Active state */
+.btn-primary:active {
+  background-color: var(--primary-40);
+}
+
+/* Focus state - only visible when tabbing, not on click */
+.btn-primary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accessibility-80);
+}
+
+/* Remove default focus styles */
+.btn-primary:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Disabled state */
+.btn-primary:disabled {
+  background-color: var(--secondary-neutral-90);
+  color: var(--neutral-70);
+  cursor: not-allowed;
+}
+
+/* Secondary button styles - using actual borders instead of inset box-shadow */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--neutral-20);
+  border: 2px solid var(--neutral-40);
+  /* Ensure the height accounts for the border */
+  height: 56px;
+}
+
+/* Small secondary button adjustment */
+.btn-secondary.btn-sm {
+  height: 40px;
+}
+
+/* Hover state - using box-shadow instead of changing border width */
+.btn-secondary:hover {
+  background-color: var(--neutral-95);
+  border: 2px solid var(--neutral-20);
+  box-shadow: 0 0 0 1px var(--neutral-20);
+}
+
+/* Pressed/Active state - using box-shadow instead of changing border width */
+.btn-secondary:active {
+  background-color: var(--neutral-90);
+  border: 2px solid var(--neutral-20);
+  box-shadow: 0 0 0 1px var(--neutral-20);
+}
+
+/* Focus state - only visible when tabbing, not on click */
+.btn-secondary:focus-visible {
+  outline: none;
+  border: 2px solid var(--accessibility-80);
+  box-shadow: none;
+}
+
+/* Remove default focus styles */
+.btn-secondary:focus:not(:focus-visible) {
+  border: 2px solid var(--neutral-40);
+  box-shadow: none;
+}
+
+/* Small secondary button focus adjustment */
+.btn-secondary.btn-sm:focus-visible {
+  border: 2px solid var(--accessibility-80);
+}
+
+/* Remove default focus styles for small buttons */
+.btn-secondary.btn-sm:focus:not(:focus-visible) {
+  border: 2px solid var(--neutral-40);
+}
+
+/* Disabled state */
+.btn-secondary:disabled {
+  background-color: transparent;
+  color: var(--neutral-70);
+  border: 2px solid var(--neutral-80);
+  cursor: not-allowed;
+} 
